@@ -78,11 +78,11 @@ export default function ToppingsFilter() {
   `);
   // count how many pizzas are in each topping
   const toppingsWithCounts = countPizzasInToppings(pizzas.nodes);
-  // loop over the list of toppings and display the topping and the count of pizzas in that topping
-  // link it up ... ...
   return (
     <ToppingsStyles>
+      {/* loop over the list of toppings and display the topping and the count of pizzas in that topping */}
       {toppingsWithCounts.map((topping) => (
+        // link it up ... ...
         <Link key={topping.id} to={`/topping/${topping.name}`}>
           <span className="name">{topping.name}</span>
           <span className="count">{topping.count}</span>

@@ -6,8 +6,10 @@ export default {
     title: `Slicks Slices`,
     siteUrl: `https://pizza.adncodez.com`,
     description: `The best pizza place ever`,
+    twitter: '@adncodez',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-sanity',

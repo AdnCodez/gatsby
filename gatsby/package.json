@@ -19,7 +19,8 @@
       "wesbos"
     ],
     "rules": {
-      "react/prop-types": 0
+      "react/prop-types": 0,
+      "no-unreachable": 1
     }
   },
   "dependencies": {

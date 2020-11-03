@@ -1,24 +1,24 @@
 import { FaPepperHot as icon } from 'react-icons/fa';
 
 export default {
-  // computer name
+  // Computer Name
   name: 'topping',
-  // visible name
+  // visible title
   title: 'Toppings',
   type: 'document',
   icon,
   fields: [
     {
       name: 'name',
-      title: 'Topping Name',
+      title: 'Pizza Name',
       type: 'string',
-      description: 'What is the name of the topping',
+      description: 'What is the name of the topping?',
     },
     {
       name: 'vegetarian',
       title: 'Vegetarian',
       type: 'boolean',
-      description: 'What is the name of the topping',
+      description: 'What is the name of the topping?',
       options: {
         layout: 'checkbox',
       },
@@ -30,7 +30,6 @@ export default {
       vegetarian: 'vegetarian',
     },
     prepare: ({ name, vegetarian }) => ({
-      // I did destructuring to fields above
       title: `${name} ${vegetarian ? '🌱' : ''}`,
     }),
   },
